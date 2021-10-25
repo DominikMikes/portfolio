@@ -1,0 +1,35 @@
+{
+    "headline": "Skills",
+    "skills": [
+        {
+            "label": "Javascript",
+            "percent": "90%",
+            "order": "1"
+        },
+        {
+            "label": "HTML",
+            "percent": "90%",
+            "order": "2"
+        },
+        {
+            "label": "CSS",
+            "percent": "70%",
+            "order": "3"
+        },
+        {
+            "label": "Typescript",
+            "percent": "70%",
+            "order": "4"
+        },
+        {
+            "label": "AngularJS",
+            "percent": "80%",
+            "order": "5"
+        },
+        {
+            "label": "MySQL",
+            "percent": "60%",
+            "order": "6"
+        }
+    ]
+}
