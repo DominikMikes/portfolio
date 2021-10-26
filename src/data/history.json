@@ -1,0 +1,74 @@
+[    
+    {
+        "organisation": "Cyberschool",
+        "job": "4th place",
+        "from": "2010",
+        "to": "",
+        "shortDescription": "4th place in the Cyberschool finals 2010.",
+        "technologies": [],
+        "type": "award"
+    },
+    {
+        "organisation": "Jungend Informatik",
+        "job": "2nd place",
+        "from": "2010",
+        "to": "",
+        "shortDescription": "2nd place at the 27th Austrian 'Jugend Informatik' competition.",
+        "technologies": [],
+        "type": "award"
+    },
+    {
+        "organisation": "MRM-Systems",
+        "job": "Frontend Developer",
+        "from": "10/2011",
+        "to": "02/2013",
+        "shortDescription": "Development of the webbased App.",
+        "technologies": ["JS (dojo)", "PHP (CakePHP)", "MSSQL", "MySQL"],
+        "type": "work"
+    },
+    {
+        "organisation": "proMESdata",
+        "job": "Fullstack Developer",
+        "from": "03/2013",
+        "to": "11/2014",
+        "shortDescription": "Developing the front- and backend App",
+        "technologies": ["JS (dojo)", "PHP (CakePHP)", "MSSQL", "MySQL"],
+        "type": "work"
+    },
+    {
+        "organisation": "TUNNEL23",
+        "job": "Fullstack Developer",
+        "from": "12/2014",
+        "to": "10/2018",
+        "shortDescription": "Developed a automated CMS for ad creation.",
+        "technologies": ["JS (jQuery, Vue)", "PHP (Laravel)", "MySQL"],
+        "type": "work"
+    },
+    {
+        "organisation": "IAB webAD",
+        "job": "Young talent",
+        "from": "2017",
+        "to": "",
+        "shortDescription": "Awarded for the young talent.",
+        "technologies": [],
+        "type": "award"
+    },
+    {
+        "organisation": "IAB webAD",
+        "job": "iab webAD Jury Member",
+        "from": "2018",
+        "to": "",
+        "shortDescription": "Member of the jury for the best ad's.",
+        "technologies": [],
+        "type": "award"
+    },
+    {
+        "organisation": "RIBSAA",
+        "job": "Frontend Developer",
+        "from": "20/05/2018",
+        "to": "today",
+        "shortDescription": "Develop international used framework features.",
+        "technologies": ["JS (TS, AngularJs, Angular)", "C#", "MSSQL"],
+        "type": "work"
+    }
+]

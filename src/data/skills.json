@@ -27,6 +27,21 @@
             "order": "5"
         },
         {
+            "label": "Angular",
+            "percent": "60%",
+            "order": "5"
+        },
+        {
+            "label": "Vue",
+            "percent": "50%",
+            "order": "5"
+        },
+        {
+            "label": "React",
+            "percent": "50%",
+            "order": "5"
+        },
+        {
             "label": "MySQL",
             "percent": "60%",
             "order": "6"

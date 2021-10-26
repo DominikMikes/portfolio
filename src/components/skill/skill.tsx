@@ -9,7 +9,7 @@ export default  class Skill extends React.Component<{}> {
     render() {
         const renderSkills = skillsJson.skills.map((skill, index) => {
             return <div className="skill">
-                        <Card sx={{ flex: 1, marginTop: 1 }}>
+                        <Card sx={{ flex: 1, marginBottom: 1 }}>
                             <CardActionArea>
                                 <CardContent>
                                     <Box sx={{ display: 'flex' }}>

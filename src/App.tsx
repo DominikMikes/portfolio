@@ -11,8 +11,9 @@ function App() {
         <Typography gutterBottom variant="h4" component="div">DM</Typography>
         <NavBar></NavBar>
       </section>      
-      <Welcome></Welcome>
+      <Welcome></Welcome>      
       <Section type="skill" headline="skills"></Section>
+      <Section type="history" headline="history"></Section>
       <Section type="project" headline="projects"></Section>
       <Section type="blog" headline="blog"></Section>
       <Section type="contact" headline="contact"></Section>      
