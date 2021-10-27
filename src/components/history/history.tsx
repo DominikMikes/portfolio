@@ -19,6 +19,8 @@ interface IHistory {
 }
 
 export default class History extends React.Component {
+    historyData = historyJSON
+    histories: any
     renderIcon(type: string) {
         switch(type) {
             case 'work':
@@ -37,9 +39,10 @@ export default class History extends React.Component {
             color="secondary"/>
         });
     }
-    render() {
-        historyJSON.reverse();
-        const renderHistories = historyJSON.map((history: IHistory) => {
+    renderHistories(data: Array<IHistory>) {
+        data.reverse();
+
+        return data.map((history: IHistory) => {
             return  <Card sx={{ display:'flex', flexDirection: 'column', flex: '0 0 auto', marginRight: 2 }}>                        
                         <CardActionArea sx={{flex: 1, paddingTop: 2}}>                            
                             {this.renderIcon(history.type)}
@@ -68,8 +71,14 @@ export default class History extends React.Component {
                     </Card>
 
         });
-        return (<Box sx={{display: 'flex',
+    }
+    render() {
+        this.histories = this.renderHistories(this.historyData);
+        return (
+        <Box sx={{display: 'flex',
         flexWrap: 'nowrap',
-        overflowX: 'scroll'}}>{renderHistories}</Box>);
+        overflowX: 'scroll'}}>
+            {this.histories}
+        </Box>);
     }
 }

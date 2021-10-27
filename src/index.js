@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import darkScrollbar from '@mui/material/darkScrollbar';
 
 // import roboto font
 import '@fontsource/roboto/300.css';
@@ -15,7 +16,14 @@ import { createTheme, ThemeProvider, CssBaseline } from '@mui/material';
 const theme = createTheme({
   palette: {
     mode: 'dark'
-  }
+  },
+  components: {
+    MuiCssBaseline: {
+      styleOverrides: {
+        body: darkScrollbar(),
+      },
+    },
+  },
 });
 
 ReactDOM.render(
