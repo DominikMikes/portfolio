@@ -3,6 +3,7 @@ import React from "react";
 
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 import CodeIcon from '@mui/icons-material/Code';
+import SchoolIcon from '@mui/icons-material/School';
 
 import historyJSON from '@data/history.json';
 import { Box } from "@mui/system";
@@ -31,7 +32,6 @@ export default class History extends React.Component {
     renderTechnologies(data: Array<string>) {        
         return data.map(technology => {            
             return <Chip
-            sx={{marginBottom: 1}}
             label={technology}
             variant="outlined"
             color="secondary"/>
@@ -40,8 +40,8 @@ export default class History extends React.Component {
     render() {
         historyJSON.reverse();
         const renderHistories = historyJSON.map((history: IHistory) => {
-            return  <Card sx={{ flex: '0 0 auto', marginRight: 2 }}>                        
-                        <CardActionArea>                            
+            return  <Card sx={{ display:'flex', flexDirection: 'column', flex: '0 0 auto', marginRight: 2 }}>                        
+                        <CardActionArea sx={{flex: 1, paddingTop: 2}}>                            
                             {this.renderIcon(history.type)}
                             <CardContent>
                                 <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
@@ -57,9 +57,9 @@ export default class History extends React.Component {
                                 <Typography gutterBottom variant="body2">
                                 {history.shortDescription}
                                 </Typography>
-                                <Box sx={{display:'flex', flexWrap: 'wrap', justifyContent: 'space-evenly'}}>
+                                {/* <Box sx={{display:'flex', flexWrap: 'wrap', justifyContent: 'space-evenly'}}>
                                     {this.renderTechnologies(history.technologies)}
-                                </Box>
+                                </Box> */}
                             </CardContent>
                         </CardActionArea>
                         <CardActions>
