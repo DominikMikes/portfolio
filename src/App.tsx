@@ -3,6 +3,7 @@ import NavBar from './components/navbar/navbar';
 import Section from '@components/section/section';
 import { Typography } from '@mui/material';
 import Welcome from '@components/welcome/welcome';
+import SideNav from '@components/navbar/sidenav';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <section className="header flex-box center">        
         <Typography gutterBottom variant="h4" component="div">DM</Typography>
         <NavBar></NavBar>
+        <SideNav></SideNav>
       </section>      
       <Welcome></Welcome>      
       <Section type="skill" headline="skills"></Section>

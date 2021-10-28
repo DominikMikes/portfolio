@@ -9,7 +9,7 @@ const aliases = (prefix = `src`) => ({
     '@styles': `${prefix}/styles`,
     '@utils': `${prefix}/utils`,
     '@state': `${prefix}/state`,
-    '@storybookHelpers': `../.storybook/helpers`,
+    // '@storybookHelpers': `../.storybook/helpers`,
   });
   
   module.exports = aliases;

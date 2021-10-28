@@ -7,7 +7,7 @@ import './navbar.scss';
 export default class NavBar extends React.Component<{}> {
     render() {
         return (            
-            <nav className="">
+            <nav className="main-navbar">
                 <ul className="flex-box flex-row">
                     <li>
                         <Button href="/">

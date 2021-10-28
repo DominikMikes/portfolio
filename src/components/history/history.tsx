@@ -38,7 +38,7 @@ export default class History extends React.Component {
             variant="outlined"
             color="secondary"/>
         });
-    }
+    }    
     renderHistories(data: Array<IHistory>) {
         data.reverse();
 
