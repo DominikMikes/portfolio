@@ -5,7 +5,7 @@ import './welcome.scss';
 
 export default class Welcome extends React.Component {
     render () {
-        return <section className="container">
+        return <section className="container" id="welcome">
                     <div className="welcome">
                         <Typography variant="h1" gutterBottom>
                             Hi, I am <Typography component="span" variant="h1" color="primary">Dominik</Typography>.<br/>

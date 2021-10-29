@@ -1,4 +1,3 @@
-
 // .color-1 {
 //     background: #0A85FF;
 // }
@@ -25,3 +24,14 @@
 // $border-color: #292F36;
 // $background-color: #1B2836;
 // $white: #FFFFFF;
+
+.dark {
+  --clr-bg: #23283e;
+  --clr-bg-alt: #2a2f4c;
+  --clr-fg: #bdbddd;
+  --clr-fg-alt: #cdcdff;
+  --clr-primary: #04d2a2;
+  --clr-secondary: #e2585b;
+  --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}

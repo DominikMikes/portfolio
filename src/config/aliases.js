@@ -1,4 +1,6 @@
-const aliases = (prefix = `src`) => ({
+const aliases = (prefix = `./src`) => ({
+    '@': `./src`,
+    '@@': `./`,
     '@data': `${prefix}/data`,
     '@templates': `${prefix}/components/templates`,
     '@components': `${prefix}/components`,

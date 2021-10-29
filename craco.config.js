@@ -12,5 +12,12 @@ const resolvedAliases = Object.fromEntries(
 module.exports = {
   webpack: {
     alias: resolvedAliases,
+    extensions: ['.ts', '.tsx'],
   },
+  jest: {
+    configure: {
+      roots: ['<rootDir>/src'],
+      testMatch: ['<rootDir>/spec/**/*.{spec,test}.{js,jsx,ts,tsx}'],
+    },
+  }
 };

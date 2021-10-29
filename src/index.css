@@ -19,8 +19,15 @@ ul {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .center {
   align-items: center;
 }
 
 
+html {
+  scroll-behavior: smooth;
+}

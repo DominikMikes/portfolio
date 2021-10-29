@@ -15,7 +15,16 @@ import { createTheme, ThemeProvider, CssBaseline } from '@mui/material';
 
 const theme = createTheme({
   palette: {
-    mode: 'dark'
+    mode: 'dark',
+    primary: {
+      main: '#04d2a2',
+    },
+    secondary: {
+      main: '#e2585b',
+    },
+    text: {
+      primary: '#e6e6e6',
+    }    
   },
   components: {
     MuiCssBaseline: {
@@ -25,6 +34,7 @@ const theme = createTheme({
     },
   },
 });
+
 
 ReactDOM.render(
   <React.StrictMode>
