@@ -27,13 +27,10 @@ export default class HistoryCard extends React.Component<PropsType, {}> {
             // node.classList.toggle("expanded");
             if (node.classList.contains("expanded")) {
                 node.classList.toggle("expanded");
-                node.style.top = this.lastBoundings.top+"px";
-                node.style.left = this.lastBoundings.left+"px";
-                node.style.height = this.lastBoundings.height+"px";
-                node.style.width = this.lastBoundings.width+"px";
+                
                 setTimeout(() => {
                     node.removeAttribute("style");
-                }, 10);
+                }, 200);
             } else {
                 this.lastBoundings = node.getBoundingClientRect();
                 node.style.top = this.lastBoundings.top+"px";
