@@ -10,11 +10,13 @@ import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 function App() {
   return (
     <div className="App dark">
-      <section className="header flex-box center">        
-        <Typography gutterBottom variant="h4" component="div">
-          <a href="welcome" className="link name">DM</a>
-        </Typography>
-        <NavBar></NavBar>
+      <section className="header-container">
+        <div className="header flex-box center">
+          <Typography gutterBottom variant="h4" component="div">
+            <a href="welcome" className="link name">DM</a>
+          </Typography>
+          <NavBar></NavBar>
+        </div>
       </section>
       <SideNav></SideNav>
       <div className="anchor"></div>

@@ -12,27 +12,62 @@ interface PropsType {
     history: IHistory
 }
 
-export default class HistoryCard extends React.Component<PropsType, {}> {
+interface IState {
+    isExpanded: boolean
+}
+
+export default class HistoryCard extends React.Component<PropsType, IState> {
     history: IHistory
     historyCard: any
     lastBoundings: any
+    placeHolderHistory: any
     constructor(props: any) {
         super(props);
+
+        this.state = {
+            isExpanded: false
+        };
+
         this.history = this.props.history;        
         this.historyCard = React.createRef();
     }
+    createPlaceHolder() {        
+        this.placeHolderHistory = document.createElement('div');
+        this.placeHolderHistory.id = "placeholderHistory";
+        this.placeHolderHistory.style.top = this.lastBoundings.top+"px";
+        this.placeHolderHistory.style.left = this.lastBoundings.left+"px";
+        this.placeHolderHistory.style.height = this.lastBoundings.height+"px";
+        this.placeHolderHistory.style.width = this.lastBoundings.width+"px";
+        this.placeHolderHistory.style.marginRight = "16px";
+        this.placeHolderHistory.style.flex = "0 0 auto";        
+    }
     expandHistory () {
+        function disableScroll() {
+            var x=window.scrollX;
+            var y=window.scrollY;
+            window.onscroll=function(){window.scrollTo(x, y);};            
+        }
+
         let node = this.historyCard.current;
         if (node) {
-            // node.classList.toggle("expanded");
             if (node.classList.contains("expanded")) {
+                this.setState({isExpanded: false});
+                window.onscroll=function(){};
                 node.classList.toggle("expanded");
                 
                 setTimeout(() => {
+                    this.placeHolderHistory.remove();
                     node.removeAttribute("style");
                 }, 200);
             } else {
+                this.setState({isExpanded: true});
+
+                disableScroll(); 
+
                 this.lastBoundings = node.getBoundingClientRect();
+                this.createPlaceHolder();
+                
+                node.parentNode.insertBefore(this.placeHolderHistory, node);                
                 node.style.top = this.lastBoundings.top+"px";
                 node.style.left = this.lastBoundings.left+"px";
                 node.style.height = this.lastBoundings.height+"px";
@@ -61,7 +96,12 @@ export default class HistoryCard extends React.Component<PropsType, {}> {
             variant="outlined"
             color="secondary"/>
         });
-    }  
+    }
+    renderButtons() {
+        return <div className="link">
+                    {(!this.state.isExpanded) ? "Details" : "Close"}
+                </div>;
+    }
     render() {
         return (
             <Card 
@@ -106,7 +146,7 @@ export default class HistoryCard extends React.Component<PropsType, {}> {
                     </CardContent>
                 </CardActionArea>
                 <CardActions>
-                    <Button size="small">Details</Button>
+                    {this.renderButtons()}
                 </CardActions>
             </Card>
         );
