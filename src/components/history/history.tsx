@@ -34,21 +34,29 @@ export default class History extends React.Component {
             this.scrollWidth = marginRight + offsetWidth;
         }
     }
+    toggleActiveDot(idx: number) {
+        document.getElementById(`historyDot${idx}`)?.classList.toggle('active');
+    }
     scrollContainer (direction: string): void {
+        let nextStep = this.currentStep;
         if (direction === 'back') {
-            if (this.currentStep > 0) {
-                this.currentStep--;
-            } else {
-                this.currentStep = 0;
-            }
+            nextStep = (nextStep > 0) ? nextStep-1 : 0;
         } else {
-            if (this.currentStep < this.maxSteps-1) {
-                this.currentStep++;
-            } else {
-                this.currentStep = this.maxSteps-1;
-            }
+            nextStep = (nextStep < this.maxSteps) ? nextStep+1 : this.maxSteps;
         }
 
+        this.scrollToCard(nextStep);
+
+        let node = this.innerContainer.current;
+        if (node) {
+            const nextTranslate = (this.currentStep * this.scrollWidth) * -1;
+            node.style.transform = `translateX(${nextTranslate}px)`;
+        }
+    }
+    scrollToCard(idx: number) {
+        this.toggleActiveDot(this.currentStep);
+        this.currentStep = idx;
+        this.toggleActiveDot(idx);
         let node = this.innerContainer.current;
         if (node) {
             const nextTranslate = (this.currentStep * this.scrollWidth) * -1;
@@ -57,7 +65,10 @@ export default class History extends React.Component {
     }
     renderNavigationDots() {
         return this.historyData.map((history: IHistory, idx: number) => {
-            return <div className={`slider-dot ${idx===0 ? "active" : ""}`}></div>;
+            return <div
+                    id={`historyDot${idx}`}
+                    onClick={() => this.scrollToCard(idx)}
+                    className={`slider-dot ${idx===0 ? "active" : ""}`}></div>;
         });
     }
     renderHistories() {

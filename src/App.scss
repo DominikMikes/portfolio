@@ -108,3 +108,13 @@ div.anchor {
   top: -10em;
   visibility: hidden;
 }
+
+@media screen and (max-width: 768px) {
+  .header {
+    height: 4em;
+  }
+
+  .header-container {
+    height: 4em;
+  }
+}

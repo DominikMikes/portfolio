@@ -13,13 +13,13 @@ function App() {
       <section className="header-container">
         <div className="header flex-box center">
           <Typography gutterBottom variant="h4" component="div">
-            <a href="welcome" className="link name">DM</a>
+            <a href="#welcome" className="link name">DM</a>
           </Typography>
           <NavBar></NavBar>
         </div>
       </section>
       <SideNav></SideNav>
-      <div className="anchor"></div>
+      <div className="anchor" id="welcome"></div>
       <Welcome></Welcome>
       <div className="anchor" id="skill"></div>
       <Section type="skill" headline="skills"></Section>

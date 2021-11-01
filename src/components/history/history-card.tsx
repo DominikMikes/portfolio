@@ -52,27 +52,27 @@ export default class HistoryCard extends React.Component<PropsType, IState> {
         if (node) {
             if (node.classList.contains("expanded")) {
                 this.setState({isExpanded: false});
-                window.onscroll=function(){};
+                // window.onscroll=function(){};
                 node.classList.toggle("expanded");
                 
                 setTimeout(() => {
-                    this.placeHolderHistory.remove();
+                    // this.placeHolderHistory.remove();
                     node.removeAttribute("style");
                 }, 200);
             } else {
                 this.setState({isExpanded: true});
 
-                disableScroll(); 
+                // disableScroll(); 
 
                 this.lastBoundings = node.getBoundingClientRect();
-                this.createPlaceHolder();
+                // this.createPlaceHolder();
                 
-                node.parentNode.insertBefore(this.placeHolderHistory, node);                
+                // node.parentNode.insertBefore(this.placeHolderHistory, node);                
                 node.style.top = this.lastBoundings.top+"px";
                 node.style.left = this.lastBoundings.left+"px";
                 node.style.height = this.lastBoundings.height+"px";
                 node.style.width = this.lastBoundings.width+"px";
-                node.style.position = "fixed";
+                // node.style.position = "fixed";
                 setTimeout(() => {
                     node.classList.toggle("expanded");
                 }, 1);
