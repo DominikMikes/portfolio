@@ -11,7 +11,11 @@ import IHistory from "model/IHistory";
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
-export default class History extends React.Component {    
+interface IState {
+    activeCardRef: any
+}
+let _self: any = null;
+export default class History extends React.Component<{}, IState> {
     historyData = historyJSON
     histories: any
     navigationDots: any
@@ -26,6 +30,11 @@ export default class History extends React.Component {
         this.scrollWidth = initialScrollWidth;
         this.maxSteps = this.historyData.length-1;
         this.currentStep = 0;
+        this.state = {
+            activeCardRef: null
+        };
+
+        _self = this;
     }
     componentDidMount () {
         if (this.innerContainer.current) {
@@ -33,6 +42,13 @@ export default class History extends React.Component {
             let offsetWidth = parseInt(window.getComputedStyle(this.innerContainer.current.children[0]).width); 
             this.scrollWidth = marginRight + offsetWidth;
         }
+    }
+    setActiveCard(cardRef: any) {
+        // called from history card so this is the wrong context        
+        _self.setState({activeCardRef: cardRef});
+        if (cardRef && cardRef.cardIndex) {
+            _self.scrollToCard(cardRef.cardIndex);
+        }        
     }
     toggleActiveDot(idx: number) {
         document.getElementById(`historyDot${idx}`)?.classList.toggle('active');
@@ -45,6 +61,10 @@ export default class History extends React.Component {
             nextStep = (nextStep < this.maxSteps) ? nextStep+1 : this.maxSteps;
         }
 
+        if (this.state.activeCardRef) {
+            this.state.activeCardRef.toggleHistory();
+        }
+
         this.scrollToCard(nextStep);
 
         let node = this.innerContainer.current;
@@ -54,6 +74,10 @@ export default class History extends React.Component {
         }
     }
     scrollToCard(idx: number) {
+        if (this.state.activeCardRef) {
+            this.state.activeCardRef.toggleHistory();
+        }
+
         this.toggleActiveDot(this.currentStep);
         this.currentStep = idx;
         this.toggleActiveDot(idx);
@@ -74,8 +98,8 @@ export default class History extends React.Component {
     renderHistories() {
         this.historyData.reverse();
 
-        return this.historyData.map((history: IHistory) => {
-            return <HistoryCard history={history}></HistoryCard>
+        return this.historyData.map((history: IHistory, idx: number) => {
+            return <HistoryCard history={history} onClick={this.setActiveCard} cardIndex={idx}></HistoryCard>
         });
     }
     render() {

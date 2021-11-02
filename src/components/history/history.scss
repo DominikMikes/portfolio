@@ -3,6 +3,7 @@
 .history-outer-container {
     position: relative;
     overflow: hidden;
+    @include smooth-transition(all);
 
     .history-inner-container {
         @include smooth-transition(all);
@@ -15,11 +16,13 @@
 }
 
 .history-card {
-    @include linear-transition(all);
+    @include smooth-transition(all);
     width: 400px;
+    max-height: 100%;
     max-width: 100%;
 
     .history-content {
+        @include smooth-transition(all);
         overflow: hidden;
         transition: max-height .2s ease-in;
         height: auto;

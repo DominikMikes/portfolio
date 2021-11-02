@@ -1,4 +1,4 @@
-import { Box, Button, Card, CardActionArea, CardActions, CardContent, Chip, Typography } from "@mui/material";
+import { Box, Card, CardActionArea, CardActions, CardContent, Chip, Typography } from "@mui/material";
 import React from "react";
 
 // ICONS
@@ -10,6 +10,8 @@ import IHistory from 'model/IHistory';
 
 interface PropsType {
     history: IHistory
+    cardIndex: number
+    onClick: Function
 }
 
 interface IState {
@@ -21,6 +23,7 @@ export default class HistoryCard extends React.Component<PropsType, IState> {
     historyCard: any
     lastBoundings: any
     placeHolderHistory: any
+    cardIndex: number
     constructor(props: any) {
         super(props);
 
@@ -28,6 +31,7 @@ export default class HistoryCard extends React.Component<PropsType, IState> {
             isExpanded: false
         };
 
+        this.cardIndex = this.props.cardIndex;
         this.history = this.props.history;        
         this.historyCard = React.createRef();
     }
@@ -41,16 +45,19 @@ export default class HistoryCard extends React.Component<PropsType, IState> {
         this.placeHolderHistory.style.marginRight = "16px";
         this.placeHolderHistory.style.flex = "0 0 auto";        
     }
-    expandHistory () {
-        function disableScroll() {
-            var x=window.scrollX;
-            var y=window.scrollY;
-            window.onscroll=function(){window.scrollTo(x, y);};            
-        }
+    toggleHistory () {
+        // function disableScroll() {
+        //     var x=window.scrollX;
+        //     var y=window.scrollY;
+        //     window.onscroll=function(){window.scrollTo(x, y);};            
+        // }
 
         let node = this.historyCard.current;
         if (node) {
             if (node.classList.contains("expanded")) {
+                // close history
+                this.props.onClick(null);
+
                 this.setState({isExpanded: false});
                 // window.onscroll=function(){};
                 node.classList.toggle("expanded");
@@ -60,6 +67,9 @@ export default class HistoryCard extends React.Component<PropsType, IState> {
                     node.removeAttribute("style");
                 }, 200);
             } else {
+                // open history
+                this.props.onClick(this);
+
                 this.setState({isExpanded: true});
 
                 // disableScroll(); 
@@ -106,7 +116,7 @@ export default class HistoryCard extends React.Component<PropsType, IState> {
         return (
             <Card 
                 className="history-card"
-                onClick={this.expandHistory.bind(this)}
+                onClick={this.toggleHistory.bind(this)}
                 ref={this.historyCard}
                 sx={{ display: 'flex', flexDirection: 'column', flex: '0 0 auto', marginRight: 2 }}>
                 <CardActionArea sx={{ flex: 1, paddingTop: 2 }}>
