@@ -14,7 +14,11 @@ export default class Welcome extends React.Component {
                             A frontend Engineer.
                         </Typography>
                         <Typography variant="body1" gutterBottom>
-                        Adipisicing sit fugit ullam unde aliquid sequi Facilis soluta facilis perspiciatis corporis nulla aspernatur. Autem eligendi rerum delectus modi quisquam? Illo ut quasi nemo ipsa cumque perspiciatis! Maiores minima consectetur.
+                            <div className="flex-box">
+                                {/* <div className="flex-element">{"<code>"} </div> */}
+                                <div className="typewrite"> I build software solutions. </div>
+                                {/* <div className="flex-element">{"<code>"} </div> */}
+                            </div>
                         </Typography>
                     </div>
                 </section>
