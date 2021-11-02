@@ -136,8 +136,8 @@ export default class HistoryCard extends React.Component<PropsType, IState> {
                         <Typography gutterBottom variant="body2">
                             {this.history.shortDescription}
                         </Typography>
-                        <Typography className="history-content" gutterBottom variant="body1">
-                            <div>
+                        {/* <Typography className="history-content" gutterBottom variant="body1"> */}
+                            <div className="history-content">
                                 <ul>
                                     <li>lorem ipsum dolore easdf efadoodafe</li>
                                     <li>lorem ipsum dolore easdf efadoodafe</li>
@@ -148,12 +148,12 @@ export default class HistoryCard extends React.Component<PropsType, IState> {
                                     <li>lorem ipsum dolore easdf efadoodafe</li>
                                     <li>lorem ipsum dolore easdf efadoodafe</li>
                                     <li>lorem ipsum dolore easdf efadoodafe</li>
-                                </ul>
+                                </ul>                            
+                                <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
+                                    {this.renderTechnologies(this.history.technologies)}
+                                </Box>
                             </div>
-                            <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
-                                {this.renderTechnologies(this.history.technologies)}
-                            </Box>
-                        </Typography>
+                        {/* </Typography> */}
                     </CardContent>
                 </CardActionArea>
                 <CardActions>

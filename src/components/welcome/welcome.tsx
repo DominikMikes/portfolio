@@ -54,11 +54,9 @@ export default class Welcome extends React.Component {
                         <Typography variant="h3" gutterBottom>
                             A frontend Engineer.
                         </Typography>
-                        <Typography variant="body1" gutterBottom sx={{display: "inline-block"}}>
-                            <div className="flex-box">
-                                <div className="typewrite animate" ref={this.typewriterRef}></div>                                
-                            </div>
-                        </Typography>
+                        <div className="flex-box inline-block">
+                            <div className="typewrite animate" ref={this.typewriterRef}></div>                                
+                        </div>
                     </div>
                 </section>
     }
