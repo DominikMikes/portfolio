@@ -12,27 +12,41 @@ const headlines = [
 
 export default class Welcome extends React.Component {
     headlineCnt: number
-    typewriterRef: React.RefObject<HTMLDivElement>;
+    typewriterRef: React.RefObject<HTMLDivElement>
+    typewriteInterval: any
     constructor(props: any) {
         super(props);
 
         this.typewriterRef = React.createRef();
         this.headlineCnt = 0;
+        this.typewriteInterval = undefined;
+    }
+    componentDidMount() {
+        this.renderTypewriterText();
     }
     startTypewriter() {
-        setInterval(() => {
-            let node = this.typewriterRef.current;
-            if (node) {
-                node.classList.toggle('animate');
-                node.innerHTML = headlines[this.headlineCnt];
+        if (!this.typewriteInterval) {
+            this.typewriteInterval = setInterval(() => {
+                this.renderTypewriterText();                
+            }, 4000);  
+        }      
+    }
+    renderTypewriterText() {
+        let node = this.typewriterRef.current;
+        if (node) {
+            // node.classList.toggle('animate');
+            node.innerHTML = headlines[this.headlineCnt];
 
-                this.headlineCnt = (this.headlineCnt < headlines.length-1) ? this.headlineCnt+1 : 0;                
-            }
-        }, 4000);        
+            if (this.headlineCnt === headlines.length-1) {
+                this.headlineCnt = 0;
+            } else {
+                this.headlineCnt++;
+            }            
+        }
     }
     render () {
-        this.startTypewriter();
-        return <section className="container" id="welcome">
+        this.startTypewriter();        
+        return <section className="container top-container" id="welcome">
                     <div className="welcome">
                         <Typography variant="h1" gutterBottom>
                             Hi, I am <Typography component="span" variant="h1" color="primary">Dominik</Typography>.<br/>
@@ -42,7 +56,7 @@ export default class Welcome extends React.Component {
                         </Typography>
                         <Typography variant="body1" gutterBottom sx={{display: "inline-block"}}>
                             <div className="flex-box">
-                                <div className="typewrite animate" ref={this.typewriterRef}>I build software solutions.</div>                                
+                                <div className="typewrite animate" ref={this.typewriterRef}></div>                                
                             </div>
                         </Typography>
                     </div>

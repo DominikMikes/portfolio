@@ -100,8 +100,9 @@ export default class HistoryCard extends React.Component<PropsType, IState> {
         }
     }
     renderTechnologies(data: Array<string>) {        
-        return data.map(technology => {            
+        return data.map((technology, idx) => {
             return <Chip
+            key={idx}
             label={technology}
             variant="outlined"
             color="secondary"/>

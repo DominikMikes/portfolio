@@ -8,14 +8,6 @@
         "link": "history"
     },
     {
-        "label": "Projects",
-        "link": "project"
-    },
-    {
-        "label": "Blog",
-        "link": "blog"
-    },
-    {
         "label": "Conact",
         "link": "contact"
     }

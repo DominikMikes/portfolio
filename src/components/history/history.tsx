@@ -61,10 +61,6 @@ export default class History extends React.Component<{}, IState> {
             nextStep = (nextStep < this.maxSteps) ? nextStep+1 : this.maxSteps;
         }
 
-        // if (this.state.activeCardRef) {
-        //     this.state.activeCardRef.toggleHistory();
-        // }
-
         this.scrollToCard(nextStep);
 
         let node = this.innerContainer.current;
@@ -90,6 +86,7 @@ export default class History extends React.Component<{}, IState> {
     renderNavigationDots() {
         return this.historyData.map((history: IHistory, idx: number) => {
             return <div
+                    key={`historyDot${idx}`}
                     id={`historyDot${idx}`}
                     onClick={() => this.scrollToCard(idx)}
                     className={`slider-dot ${idx===0 ? "active" : ""}`}></div>;
@@ -99,7 +96,7 @@ export default class History extends React.Component<{}, IState> {
         this.historyData.reverse();
 
         return this.historyData.map((history: IHistory, idx: number) => {
-            return <HistoryCard history={history} onClick={this.setActiveCard} cardIndex={idx}></HistoryCard>
+            return <HistoryCard key={idx} history={history} onClick={this.setActiveCard} cardIndex={idx}></HistoryCard>
         });
     }
     render() {

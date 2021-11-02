@@ -8,12 +8,12 @@ import skillsJson from '@data/skills.json';
 export default  class Skill extends React.Component<{}> {    
     render() {
         const renderSkills = skillsJson.skills.map((skill, index) => {
-            return <div className="skill">
+            return <div key={index} className="skill">
                         <Card sx={{ flex: 1, marginBottom: 1 }}>
                             <CardActionArea>
                                 <CardContent>
                                     <Box sx={{ display: 'flex' }}>
-                                        <Box sx={{ alignSelf: 'flex-start', flex: 1, marginRight: 10 }}>
+                                        <Box className="label" sx={{ alignSelf: 'flex-start', flex: 1, marginRight: 10 }}>
                                             <Typography
                                                 variant="body2"
                                                 component="div"

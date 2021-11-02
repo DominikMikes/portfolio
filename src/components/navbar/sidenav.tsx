@@ -19,8 +19,8 @@ export default class SideNav extends React.Component {
         } 
     }
     renderList () {
-        return menuJson.map(entry => {
-            return <li><a
+        return menuJson.map((entry, idx) => {
+            return <li key={idx}><a
                         href={`#${entry.link}`}
                         className="link"
                         onClick={this.closeNav.bind(this)}>{entry.label}</a>
