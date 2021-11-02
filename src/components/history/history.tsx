@@ -61,9 +61,9 @@ export default class History extends React.Component<{}, IState> {
             nextStep = (nextStep < this.maxSteps) ? nextStep+1 : this.maxSteps;
         }
 
-        if (this.state.activeCardRef) {
-            this.state.activeCardRef.toggleHistory();
-        }
+        // if (this.state.activeCardRef) {
+        //     this.state.activeCardRef.toggleHistory();
+        // }
 
         this.scrollToCard(nextStep);
 
