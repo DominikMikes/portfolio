@@ -25,10 +25,10 @@ function App() {
       <Section type="skill" headline="skills"></Section>
       <div className="anchor" id="history"></div>
       <Section type="history" headline="history"></Section>
-      <div className="anchor" id="project"></div>
+      {/* <div className="anchor" id="project"></div>
       <Section type="project" headline="projects"></Section>
       <div className="anchor" id="blog"></div>
-      <Section type="blog" headline="blog"></Section>
+      <Section type="blog" headline="blog"></Section> */}
       <div className="anchor" id="contact"></div>
       <Section type="contact" headline="contact"></Section>
       <div className="scroll-up">
