@@ -113,6 +113,15 @@ export default class HistoryCard extends React.Component<PropsType, IState> {
                     {(!this.state.isExpanded) ? "Details" : "Close"}
                 </div>;
     }
+    renderContent(content:Array<String>) {
+        return content.map((text, idx) => {
+            return <li key={idx}>
+                        <Typography className="history-content" gutterBottom variant="body2">
+                            {text}
+                        </Typography>
+                    </li>
+        });
+    }
     render() {
         return (
             <Card 
@@ -139,15 +148,7 @@ export default class HistoryCard extends React.Component<PropsType, IState> {
                         {/* <Typography className="history-content" gutterBottom variant="body1"> */}
                             <div className="history-content">
                                 <ul>
-                                    <li>lorem ipsum dolore easdf efadoodafe</li>
-                                    <li>lorem ipsum dolore easdf efadoodafe</li>
-                                    <li>lorem ipsum dolore easdf efadoodafe</li>
-                                    <li>lorem ipsum dolore easdf efadoodafe</li>
-                                    <li>lorem ipsum dolore easdf efadoodafe</li>
-                                    <li>lorem ipsum dolore easdf efadoodafe</li>
-                                    <li>lorem ipsum dolore easdf efadoodafe</li>
-                                    <li>lorem ipsum dolore easdf efadoodafe</li>
-                                    <li>lorem ipsum dolore easdf efadoodafe</li>
+                                    {this.renderContent(this.history.content)}
                                 </ul>                            
                                 <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
                                     {this.renderTechnologies(this.history.technologies)}

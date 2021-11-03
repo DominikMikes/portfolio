@@ -5,5 +5,6 @@ export default interface IHistory {
     to: string,
     shortDescription: string,
     technologies: Array<string>,
-    type: string
+    type: string,
+    content: Array<String>
 }

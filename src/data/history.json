@@ -6,7 +6,8 @@
         "to": "",
         "shortDescription": "4th place in the Cyberschool finals 2010.",
         "technologies": [],
-        "type": "award"
+        "type": "award",
+        "content": []
     },
     {
         "organisation": "Jungend Informatik",
@@ -15,16 +16,23 @@
         "to": "",
         "shortDescription": "2nd place at the 27th Austrian 'Jugend Informatik' competition.",
         "technologies": [],
-        "type": "award"
+        "type": "award",
+        "content": []
     },
     {
         "organisation": "MRM-Systems",
-        "job": "Frontend Developer",
+        "job": "Fullstack Developer",
         "from": "10/2011",
         "to": "02/2013",
         "shortDescription": "Development of the webbased App.",
         "technologies": ["JS (dojo)", "PHP (CakePHP)", "MSSQL", "MySQL"],
-        "type": "work"
+        "type": "work",
+        "content": [
+            "Entwicklung der webbasierenden Software und  Bereitstellung der nötigen Ressourcen für die  Inbetriebnahmen. Einschulung neuer Mitarbeiter in das  System und Konzept der Firma",
+            "Verwaltung des internen Netzwerks inklusive Server,  Firewalls etc ",
+            "Administration aller Office Ressourcen (E-Mail,  Homepage)",
+            "Datenbankmodellierung und Erstellen neuer  Datenbankkonzepte. "
+        ]
     },
     {
         "organisation": "proMESdata",
@@ -33,7 +41,17 @@
         "to": "11/2014",
         "shortDescription": "Developing the front- and backend App",
         "technologies": ["JS (dojo)", "PHP (CakePHP)", "MSSQL", "MySQL"],
-        "type": "work"
+        "type": "work",
+        "content": [
+            "Entwicklung Front- und Backend der webbasierenden Systemsoftware",
+            "Konzeptionierung und Umsetzung neuer Datenbankmodelle",
+            "Projektleitung neuer Kunden",
+            "Projektbetreuung bestehender Kunden  ",
+            "Kundenunterstützung und Kundenbetreuung",
+            "Einschulung neuer Mitarbeiter in das System.",
+            "Inbetriebnahmen der Software vor Ort (Schweiz)",
+            "Kundenschulungen vor Ort (Schweiz)"
+        ]
     },
     {
         "organisation": "TUNNEL23",
@@ -42,7 +60,16 @@
         "to": "10/2018",
         "shortDescription": "Developed a automated CMS for ad creation.",
         "technologies": ["JS (jQuery, Vue)", "PHP (Laravel)", "MySQL"],
-        "type": "work"
+        "type": "work",
+        "content": [
+            "Front(Vue.js)- und Backend(PHP) Entwicklung der firmeneigenen Software",
+            "Frontend Entwicklung und Forschung für Mobile  Werbemittel",
+            "Erstellung von Datenbankmodellen",
+            "Betreuung und Wartung Kunden Homepages",
+            "Entwicklung responsive Landingpages",
+            "Entwicklung responsive Templates",
+            "Entwicklung interner Webtools"
+        ]
     },
     {
         "organisation": "IAB webAD",
@@ -51,7 +78,8 @@
         "to": "",
         "shortDescription": "Awarded for the young talent.",
         "technologies": [],
-        "type": "award"
+        "type": "award",
+        "content": []
     },
     {
         "organisation": "IAB webAD",
@@ -60,15 +88,31 @@
         "to": "",
         "shortDescription": "Member of the jury for the best ad's.",
         "technologies": [],
-        "type": "award"
+        "type": "award",
+        "content": []
     },
     {
         "organisation": "RIBSAA",
-        "job": "Frontend Developer",
+        "job": "Fullstack Developer",
         "from": "20/05/2018",
         "to": "today",
         "shortDescription": "Develop international used framework features.",
         "technologies": ["JS (TS, AngularJs, Angular)", "C#", "MSSQL"],
-        "type": "work"
+        "type": "work",
+        "content": [
+            "Frontend(AngularJS) und Backend(C#) Entwicklung der firmeneigenen  Software",
+            "Strategien für eine Angular Migration (AngularJS zu Angular)",
+            "Software Architektur Entscheidungen",
+            "Implementierung und Erweiterung des international genutzten Frameworks",
+            "Refactoring und performance orientiere Webentwicklung",
+            "Automatisierte E2E Tests mit Selenium und Protractor",
+            "Daten getriebene Darstellungen mit Hilfe von D3JS",
+            "UI/UX - Konzepte und deren Umsetzung",
+            "Erstellung und Optimierung des Build-/Bundlingprozess mit gulp",
+            "Erstellung von automatisierten Release und Test Builds mit Hilfe von Azure DevOps",
+            "Software Design von komplexen Aufgabenstellungen",
+            "Scrummaster",
+            "Einschulung und Führung von Junior Developern"
+        ]
     }
 ]

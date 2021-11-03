@@ -83,7 +83,7 @@ export default class History extends React.Component<{}, IState> {
             node.style.transform = `translateX(${nextTranslate}px)`;
         }
     }
-    renderNavigationDots() {
+    renderNavigationDots() { 
         return this.historyData.map((history: IHistory, idx: number) => {
             return <div
                     key={`historyDot${idx}`}
