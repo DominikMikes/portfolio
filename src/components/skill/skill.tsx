@@ -35,7 +35,7 @@ export default  class Skill extends React.Component<{}> {
                                     <LinearProgress
                                         color="primary"
                                         variant="determinate"
-                                        value={75} />
+                                        value={parseInt(skill.percent) | 0} />
                                 </CardContent>
                             </CardActionArea>
                         </Card>
