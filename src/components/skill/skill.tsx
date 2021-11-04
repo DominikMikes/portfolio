@@ -10,6 +10,7 @@ export default  class Skill extends React.Component<{}> {
     render() {
         const renderSkills = [];
         for (const [key, value] of Object.entries(skillsJson)) {
+            renderSkills.push(<div className="skill-headline">{key}</div>);
             renderSkills.push(value.map((skill: ISkill, index: number) => {
                     return <div key={index} className="skill">
                         <Card sx={{ flex: 1, marginBottom: 1 }}>
