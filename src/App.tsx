@@ -12,7 +12,7 @@ function App() {
     <div className="App dark">
       <section className="header-container">
         <div className="header flex-box center">
-          <Typography gutterBottom variant="h4" component="div">
+          <Typography gutterBottom variant="h4" component="div" sx={{margin: 0}}>
             <a href="#welcome" className="link name">DM</a>
           </Typography>
           <NavBar></NavBar>

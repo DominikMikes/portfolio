@@ -1,22 +1,22 @@
 {
     "frontend": [
         {
-            "label": "Javascript",
+            "label": "Javascript ⭐",
             "percent": "90%",
             "order": "1"
         },
         {
-            "label": "HTML",
+            "label": "HTML ⭐",
             "percent": "90%",
             "order": "2"
         },
         {
-            "label": "CSS",
+            "label": "CSS ⭐",
             "percent": "70%",
             "order": "3"
         },
         {
-            "label": "Typescript",
+            "label": "Typescript ⭐",
             "percent": "70%",
             "order": "4"
         },
@@ -58,7 +58,7 @@
     ],
     "backend": [
         {
-            "label": "Javascript",
+            "label": "Javascript ⭐",
             "percent": "90%",
             "order": "1"
         },
