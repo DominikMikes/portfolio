@@ -1,8 +1,24 @@
 @import 'styles/colors';
+@import 'styles/mixins';
 
 .welcome {
     max-width: 600px;
     margin: 0 auto;
+
+    .avatar {
+      @include slow-ease-transition(all);
+      transform: rotateY(0deg);
+
+      &:hover {
+        animation: coin-flip 1s;
+        // transform: rotateY(720deg);
+      }
+
+      @keyframes coin-flip {
+        from {transform: rotateY(0deg)}
+        to {transform: rotateY(720deg)}
+      }
+    }
 
     .typewrite {
         overflow: hidden;

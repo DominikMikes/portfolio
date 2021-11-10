@@ -5,3 +5,7 @@
 @mixin linear-transition($type...) {
     transition: #{$type} 0.2s linear !important;
 }
+
+@mixin slow-ease-transition($type...) {
+    transition: #{$type} 1s ease-in-out !important;
+}

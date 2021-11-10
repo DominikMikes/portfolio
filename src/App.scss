@@ -43,6 +43,9 @@
 
 section {
   margin: 0 auto;
+  &:last-child {
+    box-shadow: none;
+  }
 }
 
 .header {

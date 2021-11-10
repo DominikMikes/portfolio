@@ -21,6 +21,8 @@ function App() {
       <SideNav></SideNav>
       <div className="anchor" id="welcome"></div>
       <Welcome></Welcome>
+      <div className="anchor" id="about"></div>
+      <Section type="about" headline="about"></Section>
       <div className="anchor" id="skill"></div>
       <Section type="skill" headline="skills"></Section>
       <div className="anchor" id="history"></div>

@@ -1,4 +1,4 @@
-import { Typography } from "@mui/material";
+import { Avatar, Typography } from "@mui/material";
 import React from "react";
 
 import './welcome.scss';
@@ -34,7 +34,6 @@ export default class Welcome extends React.Component {
     renderTypewriterText() {
         let node = this.typewriterRef.current;
         if (node) {
-            // node.classList.toggle('animate');
             node.innerHTML = headlines[this.headlineCnt];
 
             if (this.headlineCnt === headlines.length-1) {
@@ -51,6 +50,12 @@ export default class Welcome extends React.Component {
                         <Typography variant="h1" gutterBottom>
                             Hi, I am <Typography component="span" variant="h1" color="primary">Dominik</Typography>.<br/>
                         </Typography>
+                        <Avatar
+                            alt="Dominik"
+                            src="/images/avatar.jpg"
+                            className="avatar"
+                            sx={{ margin: '0 auto 0.35em auto', width: '120px', height: '120px' }}
+                        />
                         <Typography variant="h3" gutterBottom>
                             A frontend Engineer.
                         </Typography>

@@ -4,6 +4,7 @@ import Project from "@components/project/project";
 import Blog from '@components/blog-card/blog-card';
 import Contact from "@components/contact/contact";
 import History from "@components/history/history";
+import About from "@components/about/about";
 import { Typography } from "@mui/material";
 
 
@@ -17,6 +18,8 @@ export default class Section extends React.Component<PropsType, {}> {
         switch (type) {
             case 'skill':
                 return <Skill></Skill>;
+            case 'about':
+                return <About></About>
             case 'project':
                 return <Project></Project>;
             case 'blog':

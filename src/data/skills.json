@@ -12,12 +12,12 @@
         },
         {
             "label": "CSS ⭐",
-            "percent": "70%",
+            "percent": "80%",
             "order": "3"
         },
         {
             "label": "Typescript ⭐",
-            "percent": "70%",
+            "percent": "75%",
             "order": "4"
         },
         {
@@ -37,115 +37,12 @@
         },
         {
             "label": "React",
-            "percent": "40%",
+            "percent": "50%",
             "order": "8"
         },
         {
-            "label": "D3.js",
-            "percent": "70%",
-            "order": "9"
-        },
-        {
-            "label": "jQuery",
-            "percent": "80%",
-            "order": "9"
-        },
-        {
-            "label": "moment.js",
-            "percent": "80%",
-            "order": "10"
-        }
-    ],
-    "backend": [
-        {
-            "label": "Javascript ⭐",
-            "percent": "90%",
-            "order": "1"
-        },
-        {
-            "label": "PHP",
-            "percent": "60%",
-            "order": "2"
-        },
-        {
-            "label": "C#",
-            "percent": "60%",
-            "order": "3"
-        },
-        {
             "label": "Node.js",
-            "percent": "60%",
-            "order": "4"
-        }
-    ],
-    "versioning": [
-        {
-            "label": "GIT",
-            "percent": "80%",
-            "order": "1"
-        },
-        {
-            "label": "SVN",
-            "percent": "90%",
-            "order": "2"
-        }
-    ],
-    "database": [
-        {
-            "label": "MSSQL",
-            "percent": "70%",
-            "order": "1"
-        },
-        {
-            "label": "MySQL",
-            "percent": "70%",
-            "order": "2"
-        },
-        {
-            "label": "MongoDB",
-            "percent": "40%",
-            "order": "3"
-        }
-    ],
-    "tools": [
-        {
-            "label": "MS Office",
-            "percent": "90%",
-            "order": "1"
-        },
-        {
-            "label": "MS Teams",
-            "percent": "90%",
-            "order": "2"
-        },
-        {
-            "label": "VS Code",
-            "percent": "70%",
-            "order": "3"
-        },
-        {
-            "label": "Visual Studio",
-            "percent": "70%",
-            "order": "4"
-        },
-        {
-            "label": "Eclipse",
-            "percent": "70%",
-            "order": "5"
-        },
-        {
-            "label": "Atom",
-            "percent": "70%",
-            "order": "6"
-        },
-        {
-            "label": "WebStorm",
-            "percent": "90%",
-            "order": "7"
-        },
-        {
-            "label": "TotalCommander",
-            "percent": "50%",
+            "percent": "55%",
             "order": "8"
         }
     ]
