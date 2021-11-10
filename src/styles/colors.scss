@@ -25,13 +25,26 @@
 // $background-color: #1B2836;
 // $white: #FFFFFF;
 
-.dark {
+.dark2 {
   --clr-bg: #23283e;
   --clr-bg-alt: #2a2f4c;
   --clr-fg: #bdbddd;
   --clr-fg-alt: #cdcdff;
   --clr-primary: #04d2a2;
   --clr-secondary: #e2585b;
+  --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+// background #0e1c2a
+// card #182b3c
+// primary #2eac68
+.dark {
+  --clr-bg: #0e1c2a;
+  --clr-bg-alt: #182b3c;
+  --clr-fg: #bdbddd;
+  --clr-fg-alt: #cdcdff;
+  --clr-primary: #2eac68;
+  --clr-secondary: #315e8c;
   --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }

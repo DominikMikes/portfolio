@@ -13,7 +13,11 @@ import '@fontsource/roboto/700.css';
 
 import { createTheme, ThemeProvider, CssBaseline } from '@mui/material';
 
-const theme = createTheme({
+// background #0e1c2a
+// card #182b3c
+// primary #2eac68
+
+/*
   palette: {
     mode: 'dark',
     primary: {
@@ -25,6 +29,25 @@ const theme = createTheme({
     text: {
       primary: '#e6e6e6',
     }    
+  },
+*/
+
+const theme = createTheme({
+  palette: {
+    mode: 'dark',
+    primary: {
+      main: '#2eac68',
+    },
+    secondary: {
+      main: '#315e8c',
+    },
+    background: {
+      default: '#0e1c2a',
+      paper: '#182b3c',
+    },
+    text: {
+      primary: '#e6e6e6',
+    }  
   },
   components: {
     MuiCssBaseline: {
