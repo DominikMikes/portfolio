@@ -1,6 +1,4 @@
 import React, { createRef } from "react";
-import CloseIcon from '@mui/icons-material/Close';
-import MenuIcon from '@mui/icons-material/Menu';
 
 import menuJson from '@data/menu.json';
 
