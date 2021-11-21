@@ -52,7 +52,7 @@ export default class Welcome extends React.Component {
                         </Typography>
                         <Avatar
                             alt="Dominik"
-                            src="./images/avatar.jpg"
+                            src="https://dominikmikes.github.io/portfolio/images/avatar.jpg"
                             className="avatar"
                             sx={{ margin: '0 auto 0.35em auto', width: '120px', height: '120px' }}
                         />
