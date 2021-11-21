@@ -48,16 +48,16 @@ export default class Welcome extends React.Component {
         return <section className="container top-container" id="welcome">
                     <div className="welcome">
                         <Typography variant="h1" gutterBottom>
-                            Hi, I am <Typography component="span" variant="h1" color="primary">Dominik</Typography>.<br/>
+                            Hi, I am <Typography component="span" variant="h1" color="primary">Dominik</Typography><br/>
                         </Typography>
                         <Avatar
                             alt="Dominik"
                             src="https://dominikmikes.github.io/portfolio/images/avatar.jpg"
                             className="avatar"
-                            sx={{ margin: '0 auto 0.35em auto', width: '120px', height: '120px' }}
+                            sx={{ margin: '0 auto 2em auto', width: '120px', height: '120px' }}
                         />
                         <Typography variant="h3" gutterBottom>
-                            A frontend Engineer.
+                            A software Engineer.
                         </Typography>
                         <div className="flex-box inline-block">
                             <div className="typewrite animate" ref={this.typewriterRef}></div>                                

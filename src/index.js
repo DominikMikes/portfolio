@@ -56,6 +56,18 @@ const theme = createTheme({
       },
     },
   },
+  typography: {
+    h1: {
+      '@media (max-width:768px)': {
+        fontSize: '4rem',
+      }
+    },
+    h3: {
+      '@media (max-width:768px)': {
+        fontSize: '2rem',
+      }
+    }
+  }
 });
 
 
