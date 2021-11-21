@@ -28,10 +28,9 @@
         "technologies": ["JS (dojo)", "PHP (CakePHP)", "MSSQL", "MySQL"],
         "type": "work",
         "content": [
-            "Entwicklung der webbasierenden Software und  Bereitstellung der nötigen Ressourcen für die  Inbetriebnahmen. Einschulung neuer Mitarbeiter in das  System und Konzept der Firma",
-            "Verwaltung des internen Netzwerks inklusive Server,  Firewalls etc ",
-            "Administration aller Office Ressourcen (E-Mail,  Homepage)",
-            "Datenbankmodellierung und Erstellen neuer  Datenbankkonzepte. "
+            "Working on the company’s own software ERP solution to ensure good quality in automated factories (specialized on liquids). First I mainly worked on the backend (PHP - CakePHP) and then switched to frontend (JS - Dojo).",
+            "I managed the network, servers and firewalls of the company. The office ressources like E-Mail and homepage were provided by myself.",
+            "Creating database concepts and implementing them was a part of my job."
         ]
     },
     {
@@ -43,14 +42,10 @@
         "technologies": ["JS (dojo)", "PHP (CakePHP)", "MSSQL", "MySQL"],
         "type": "work",
         "content": [
-            "Entwicklung Front- und Backend der webbasierenden Systemsoftware",
-            "Konzeptionierung und Umsetzung neuer Datenbankmodelle",
-            "Projektleitung neuer Kunden",
-            "Projektbetreuung bestehender Kunden  ",
-            "Kundenunterstützung und Kundenbetreuung",
-            "Einschulung neuer Mitarbeiter in das System.",
-            "Inbetriebnahmen der Software vor Ort (Schweiz)",
-            "Kundenschulungen vor Ort (Schweiz)"
+            "Working on the company’s own software ERP solution to ensure good quality in automated factories (specialized on liquids). First I mainly worked on the backend (PHP - CakePHP) and then switched to frontend (JS - Dojo).",
+            "Creating database concepts and implementing them was a part of my job.",
+            "I have been in charge of new customers and have had to lead these ongoing projects. Installations of the software on site (Switzerland) and training the key users was also a part of my job.",
+            "I made school enrollment of new members of the team."
         ]
     },
     {
@@ -62,13 +57,11 @@
         "technologies": ["JS (jQuery, Vue)", "PHP (Laravel)", "MySQL"],
         "type": "work",
         "content": [
-            "Front(Vue.js)- und Backend(PHP) Entwicklung der firmeneigenen Software",
-            "Frontend Entwicklung und Forschung für Mobile  Werbemittel",
-            "Erstellung von Datenbankmodellen",
-            "Betreuung und Wartung Kunden Homepages",
-            "Entwicklung responsive Landingpages",
-            "Entwicklung responsive Templates",
-            "Entwicklung interner Webtools"
+            "Working on the company's CMS software to automatically generate ads. I completely reworked the software with Vue.js and PHP (Laravel).",
+            "One of my key parts was to develop and experiment with new technologies and new ways to display mobile ads.",
+            "I designed and implemented database concepts.",
+            "The care and maintenance of our company websites with different tools was also a small part of my business.",
+            "I created responsive landing pages, templates, prototypes and all kinds of web tools for internal use."
         ]
     },
     {
@@ -100,19 +93,15 @@
         "technologies": ["JS (TS, AngularJs, Angular)", "C#", "MSSQL"],
         "type": "work",
         "content": [
-            "Frontend(AngularJS) und Backend(C#) Entwicklung der firmeneigenen  Software",
-            "Strategien für eine Angular Migration (AngularJS zu Angular)",
-            "Software Architektur Entscheidungen",
-            "Implementierung und Erweiterung des international genutzten Frameworks",
-            "Refactoring und performance orientiere Webentwicklung",
-            "Automatisierte E2E Tests mit Selenium und Protractor",
-            "Daten getriebene Darstellungen mit Hilfe von D3JS",
-            "UI/UX - Konzepte und deren Umsetzung",
-            "Erstellung und Optimierung des Build-/Bundlingprozess mit gulp",
-            "Erstellung von automatisierten Release und Test Builds mit Hilfe von Azure DevOps",
-            "Software Design von komplexen Aufgabenstellungen",
-            "Scrummaster",
-            "Einschulung und Führung von Junior Developern"
+            "Working on the ERP software iTWO4.0 as frontend-developer (AngularJS) and part time backend-developer (C#).",
+            "Design strategies to migrate from AngularJS to Angular as a core team member of the RIB developer team in Stuttgart. ",
+            "In my current position I have to make system relevant software architectural decisions.",
+            "My main responsibility is to provide clean and solid Framework features which are used by all developers around the world (China, USA, Germany, India). One of my most important part is the so called “Planning Board” to visualize data in a more user friendly way. This is done with D3JS (data driven JS library).",
+            "Refactoring and performance orientated development are very important parts of my current position.",
+            "To reduce manual testing I also write automated E2E and unit tests with Selenium and Protractor (for AngularJS).",
+            "Another part of my current position is to grant optimized deployable code. I use gulp and its pipes to ensure the best possible build and bundling outcome.",
+            "As an assistant of our parent company RIB, I use my long time experience to deliver UI / UX - concepts and their implementation.",
+            "In our team in Vienna I am the Scrummaster and support our product owner and plan our agile planned sprints. I also teach and look after our junior developer. Code reviews(PR), teaching development concepts and guide colleges are my daily business."
         ]
     }
 ]
