@@ -7,7 +7,7 @@ const headlines = [
     "I build software solutions.",
     "I love to write beatiful code.",
     "I build performance oriented apps.",
-    "I never stop learning something new."
+    "I never stop learning."
 ];
 
 export default class Welcome extends React.Component {
