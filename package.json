@@ -1,4 +1,5 @@
 {
+  "homepage": "https://dominikmikes.github.io/portfolio/",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -28,7 +29,9 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "craco eject"
+    "eject": "craco eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -53,5 +56,8 @@
       "^@components(.*)$": "<rootDir>/src/components$1",
       "^@data(.*)$": "<rootDir>/src/data$1"
     }
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
