@@ -6,7 +6,7 @@ import './skill.scss';
 
 import skillsJson from '@data/skills.json';
 
-export default  class Skill extends React.Component<{}> {
+export default class Skill extends React.Component<{}> {
     render() {
         const renderSkills = [];
         for (const [key, value] of Object.entries(skillsJson)) {

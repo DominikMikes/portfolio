@@ -2,6 +2,8 @@ import React, { createRef } from "react";
 
 import menuJson from '@data/menu.json';
 
+import './navbar.scss';
+
 export default class SideNav extends React.Component {
     sideNavRef = createRef<HTMLDivElement>()
     menuRef = createRef<HTMLButtonElement>()

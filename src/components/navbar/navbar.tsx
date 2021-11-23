@@ -2,6 +2,7 @@ import React from 'react';
 
 import '../../App.scss';
 import './navbar.scss';
+import '../../index.css';
 
 import menuJson from '@data/menu.json';
 // todo add projects an blog section

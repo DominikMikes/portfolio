@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import darkScrollbar from '@mui/material/darkScrollbar';
 
 // import roboto font
 import '@fontsource/roboto/300.css';
@@ -11,7 +10,8 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 
-import { createTheme, ThemeProvider, CssBaseline } from '@mui/material';
+import { ThemeProvider, CssBaseline } from '@mui/material';
+import { darkTheme } from '@styles/darktheme';
 
 // background #0e1c2a
 // card #182b3c
@@ -32,48 +32,9 @@ import { createTheme, ThemeProvider, CssBaseline } from '@mui/material';
   },
 */
 
-const theme = createTheme({
-  palette: {
-    mode: 'dark',
-    primary: {
-      main: '#2eac68',
-    },
-    secondary: {
-      main: '#AC2E72',
-    },
-    background: {
-      default: '#0e1c2a',
-      paper: '#182b3c',
-    },
-    text: {
-      primary: '#e6e6e6',
-    }  
-  },
-  components: {
-    MuiCssBaseline: {
-      styleOverrides: {
-        body: darkScrollbar(),
-      },
-    },
-  },
-  typography: {
-    h1: {
-      '@media (max-width:768px)': {
-        fontSize: '4rem',
-      }
-    },
-    h3: {
-      '@media (max-width:768px)': {
-        fontSize: '2rem',
-      }
-    }
-  }
-});
-
-
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={darkTheme}>
       <CssBaseline />
       <App />
     </ThemeProvider>
