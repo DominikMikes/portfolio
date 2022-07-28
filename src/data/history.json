@@ -98,10 +98,26 @@
             "In my current position I have to make system relevant software architectural decisions.",
             "My main responsibility is to provide clean and solid Framework features which are used by all developers around the world (China, USA, Germany, India). One of my most important part is the so called “Planning Board” to visualize data in a more user friendly way. This is done with D3JS (data driven JS library).",
             "Refactoring and performance orientated development are very important parts of my current position.",
-            "To reduce manual testing I also write automated E2E and unit tests with Selenium and Protractor (for AngularJS).",
+            "To reduce manual testing I also write automated E2E and unit tests with Jest, Storybook and Protractor.",
             "Another part of my current position is to grant optimized deployable code. I use gulp and its pipes to ensure the best possible build and bundling outcome.",
             "As an assistant of our parent company RIB, I use my long time experience to deliver UI / UX - concepts and their implementation.",
             "In our team in Vienna I am the Scrummaster and support our product owner and plan our agile planned sprints. I also teach and look after our junior developer. Code reviews(PR), teaching development concepts and guide colleges are my daily business."
+        ]
+    },
+    {
+        "organisation": "RIBSAA",
+        "job": "Technical Architect",
+        "from": "01/12/2021",
+        "to": "today",
+        "shortDescription": "Part of an international Architects team.",
+        "technologies": ["JS (TS, Angular, React)", "C#", "MSSQL", "Azure DevOps"],
+        "type": "work",
+        "content": [
+            "Frontend Architect of an Micro-Frontend (MFE - with module-federation) Angular Applikation.", 
+            "Leading and guiding international teams.",
+            "Part of an Angular migration Team which migrates an enterprise application from AngularJS to Angular. Defining styleguides, dependencies and directory structures are parts of my responsibility.",
+            "Evaluation and writing guidelines for all products of the RIB Group is also part of my job as a technical architect",
+            "I am also responsible for used technologies and tools especially in the frontend sector."
         ]
     }
 ]
