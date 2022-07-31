@@ -105,12 +105,22 @@
         ]
     },
     {
+        "organisation": "Microsoft",
+        "job": "Azure Fundamentals Certification",
+        "from": "2022",
+        "to": "",
+        "shortDescription": "",
+        "technologies": ["Azure", "Cloud Data", "Cloud Services"],
+        "type": "award",
+        "content": ["Earners of the Azure Fundamentals certification have demonstrated foundational level knowledge of cloud services and how those services are provided with Microsoft Azure."]
+    },
+    {
         "organisation": "RIBSAA",
         "job": "Technical Architect",
         "from": "01/12/2021",
         "to": "today",
-        "shortDescription": "Part of an international Architects team.",
-        "technologies": ["JS (TS, Angular, React)", "C#", "MSSQL", "Azure DevOps"],
+        "shortDescription": "Part of an international Architecture board.",
+        "technologies": ["JS (TS, Angular, React)", "C#", "MSSQL", "Azure DevOps", "Azure Services"],
         "type": "work",
         "content": [
             "Frontend Architect of an Micro-Frontend (MFE - with module-federation) Angular Applikation.", 
